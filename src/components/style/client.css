@@ -1,0 +1,12 @@
+.clientDiv{
+    width: 238px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    font-weight: bold;
+    min-height: 50px;
+}
+.clientNameDiv{
+    margin-top: 10px;
+    font-size: 20px;
+}

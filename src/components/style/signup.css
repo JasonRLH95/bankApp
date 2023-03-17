@@ -1,0 +1,36 @@
+#signupDiv{
+    position: relative;
+}
+.signupInputs{
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-indent: 5px;
+}
+.signupBtns{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(50, 150, 255);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 100px;
+    top:200px;
+    border: none;
+    border-radius: 5px;
+}
+#signupBtn2{
+    top:235px;
+}
+#showPass1{
+    position: absolute;
+    right: 25px;
+    top: 96px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-image: url("../images/eyeSign1.png");
+    background-size: contain;
+    filter: opacity(40%);
+}

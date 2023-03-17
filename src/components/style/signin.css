@@ -1,0 +1,40 @@
+#signinDiv{
+    position: relative;
+}
+.signinInputs{
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-indent: 5px;
+}
+.signinBtns{
+    /* margin-left: 0; */
+    width: 100px;
+    height: 30px;
+    margin-bottom: 5px;
+    position: absolute;
+    left: 100px;
+    background-color: rgb(50,150,255);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+#signinBtn1{
+    top:165px;
+}
+#signinBtn2{
+    top:200px;
+}
+#showPass{
+    position: absolute;
+    right: 25px;
+    top: 48px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-image: url("../images/eyeSign1.png");
+    background-size: contain;
+    filter: opacity(40%);
+}

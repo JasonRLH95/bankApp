@@ -1,0 +1,23 @@
+#divEdit1{
+    width: 100px;
+    height:120px;
+    margin:0 50px;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    line-height:0;
+    /* border: 1px solid black; */
+}
+.editBtns{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(50,150,255);
+    border: none;
+    color: white;
+    font-weight: bold;
+
+}
+#editBtn2{
+    display: none;
+}

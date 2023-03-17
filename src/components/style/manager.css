@@ -1,0 +1,17 @@
+/* #usersDiv{
+    
+} */
+#manager-exitBtn{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(50,150,255);
+}
+#managerMainDiv{
+    padding-bottom: 100px;
+}
