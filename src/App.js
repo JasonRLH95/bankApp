@@ -89,7 +89,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/Admin' element={<Manager users={users}/>}/>
-          <Route path='/' element={<SignIn admin={admin} users={users} setCurrentUser={setCurrentUser} currentUser={currentUser} name={name} setName={setName}/>}/>
+          <Route path='/bankApp' element={<SignIn admin={admin} users={users} setCurrentUser={setCurrentUser} currentUser={currentUser} name={name} setName={setName}/>}/>
           <Route path='/Register' element={<SignUp class={User} setCurrentUser={setCurrentUser} setUsers={setUsers} users={users} id={id} name={name} password={password} amount={amount} setID={setID} setName={setName} setPassword={setPassword} setAmount={setAmount} admin={admin}/>}/>
           <Route path={`/${name}`} element={<HomePage setInputAmount={setInputAmount} setInputCompany={setInputCompany} inputAmount={inputAmount} inputCompany={inputCompany} currentUser={currentUser} add={add}   />}/>
           <Route path='/editDetails' element={<Edit setCurrentUser={setCurrentUser} currentUser={currentUser} setEditID={setEditID} setEditName={setEditName} setEditPassword={setEditPassword} setEditAmount={setEditAmount} editID={editID} editName={editName} editPassword={editPassword} editAmount={editAmount} edit={edit} name={name} setName={setName} users={users}/>}/>

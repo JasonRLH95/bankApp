@@ -8,7 +8,7 @@ export default function Manager(props) {
     return (
     <div id='managerMainDiv'>
         <h3>Manager page</h3>
-            <button id='manager-exitBtn' onClick={()=>{nav('/')}}>Exit</button>
+            <button id='manager-exitBtn' onClick={()=>{nav('/bankApp')}}>Exit</button>
         <div id='usersDiv'>
         {props.users.map((val,inx)=>{
             if(inx!=0){

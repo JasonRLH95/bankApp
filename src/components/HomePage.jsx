@@ -34,7 +34,7 @@ export default function HomePage(props) {
         <button className='homeBtns' onClick={()=>{setFlag(!flag)}}>Action</button>
         <button className='homeBtns' onClick={()=>{alert(`Your back account has an amount of - ${props.currentUser.amount}₪`)}}>Balance</button>
         <button className='homeBtns' onClick={()=>{nav('/editDetails')}}>Edit</button>
-        <button className='homeBtns' onClick={()=>{nav('/')}}>Exit</button>
+        <button className='homeBtns' onClick={()=>{nav('/bankApp')}}>Exit</button>
         </div>
         <div>{showAction()}</div>
     </div>
