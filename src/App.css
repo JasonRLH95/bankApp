@@ -1,4 +1,8 @@
+body{
+  background-color: lightblue;
+}
 .App {
+  background-color: aliceblue;
   text-align: center;
   width: 300px;
   height: 450px;
@@ -6,6 +10,7 @@
   overflow: auto;
   border-radius: 20px;
   margin: 100px auto;
+  position: relative;
 }
 ::-webkit-scrollbar{
   width:0;
@@ -20,11 +25,20 @@
   color: whitesmoke;
   position: sticky;
   top: 0;
+  z-index: 2000;
+}
+#rightsP{
+  font-size: 10px;
+  position: absolute;
+  left:120px;
+  bottom: 0;
+  width: 60px;
 }
 
 #dynamicApp{
   border-top: 3px solid lightgrey;
-  padding-top: 60px;
+  padding-top: 20px;
+  /* background-color:red; */
 }
 
 /* .App-logo {

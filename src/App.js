@@ -81,7 +81,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 id='head1'>SV-Bank</h1>
+      <h1 id='head1'>SV-Bank {`\n`} <p id='rightsP'>&reg; JasonR95</p></h1>
 
 
       {/* <button style={{display:'none'}} onClick={()=>{console.log(users)}}>show users</button> <br/><br/> */}

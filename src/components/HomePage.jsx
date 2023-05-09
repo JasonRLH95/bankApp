@@ -1,9 +1,11 @@
 import React,{useState} from 'react'
 import { useNavigate } from 'react-router-dom';
-import './style/home.css'
+import './style/home.css';
+import History from './History';
 
 export default function HomePage(props) {
     const [flag,setFlag] = useState(false);
+    const [historyFlag,setHistoryFlag] = useState(false);
     const nav = useNavigate();
     const showAction=()=>{
         if(flag===true){
@@ -27,16 +29,25 @@ export default function HomePage(props) {
             setFlag(false);
         }
     }
+    const showHistory=()=>{
+        // console.log(props.currentUser.expenses)
+        if(historyFlag===true){
+            return <History setHistoryFlag={setHistoryFlag} expensesArr={props.currentUser.expenses}/>
+        }
+        else{return null}
+    }
     return (
     <div id='homeMainDiv'>
         <h3>Welcome {props.currentUser.name}</h3>
         <div id='homeBtnsRemote'>
-        <button className='homeBtns' onClick={()=>{setFlag(!flag)}}>Action</button>
-        <button className='homeBtns' onClick={()=>{alert(`Your back account has an amount of - ${props.currentUser.amount}₪`)}}>Balance</button>
+        <button className='homeBtns' onClick={()=>{setFlag(!flag);setHistoryFlag(false)}}>Action</button>
+        <button className='homeBtns' onClick={()=>{alert(`Your bank account has an amount of - ${props.currentUser.amount}₪`)}}>Balance</button>
+        <button className='homeBtns' onClick={()=>{setHistoryFlag(!historyFlag);setFlag(false)}}>History</button>
         <button className='homeBtns' onClick={()=>{nav('/editDetails')}}>Edit</button>
         <button className='homeBtns' onClick={()=>{nav('/bankApp')}}>Exit</button>
         </div>
         <div>{showAction()}</div>
+        <div>{showHistory()}</div>
     </div>
     )
 }
