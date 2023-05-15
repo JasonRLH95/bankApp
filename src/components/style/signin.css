@@ -1,6 +1,12 @@
 #signinDiv{
     position: relative;
 }
+#signInInputsDiv{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    position: relative;
+}
 .signinInputs{
     width: 250px;
     height: 30px;
@@ -8,28 +14,28 @@
     font-size: 20px;
     text-indent: 5px;
 }
+#signInBtnsDiv{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: 50px auto 0;
+}
 .signinBtns{
-    /* margin-left: 0; */
-    width: 100px;
-    height: 30px;
-    margin-bottom: 5px;
-    position: absolute;
-    left: 100px;
+    width: 140px;
+    height: 35px;
+    margin-bottom: 10px;
     background-color: rgb(50,150,255);
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 5px;
-}
-#signinBtn1{
-    top:165px;
-}
-#signinBtn2{
-    top:200px;
+    font-size: 20px;
 }
 #showPass{
+    cursor: pointer;
     position: absolute;
-    right: 25px;
+    right: 5px;
     top: 48px;
     height: 30px;
     width: 30px;
@@ -37,4 +43,25 @@
     background-image: url("../images/eyeSign1.png");
     background-size: contain;
     filter: opacity(40%);
+}
+
+@media (min-width:720px) {
+    #showPass{
+        top: 62px;
+    }
+    #signInInputsDiv{
+        margin-top: 50px;
+    }
+    .signinInputs{
+        width: 300px;
+        height: 40px;
+    }
+    #signInBtnsDiv{
+        flex-direction: row;
+        width: 310px;
+        justify-content: space-between;
+    }
+    .signinBtns{
+        width: 150px;
+    }
 }

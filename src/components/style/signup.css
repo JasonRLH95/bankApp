@@ -14,16 +14,16 @@
     background-color: rgb(50, 150, 255);
     color: white;
     font-weight: bold;
-    position: absolute;
-    left: 100px;
-    top:200px;
+    margin-top: 25px;
+    cursor: pointer;
     border: none;
     border-radius: 5px;
 }
 #signupBtn2{
-    top:235px;
+    margin-top: 5px;
 }
 #showPass1{
+    cursor: pointer;
     position: absolute;
     right: 25px;
     top: 96px;
@@ -33,4 +33,25 @@
     background-image: url("../images/eyeSign1.png");
     background-size: contain;
     filter: opacity(40%);
+}
+@media(min-width:720px){
+    .signupBtns{
+        width: 260px;
+        height: 40px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    #signupBtn2{
+        margin-top: 10px;
+    }
+    #signupInputsDiv{
+        width: fit-content;
+        margin: auto;
+        height: fit-content;
+        position: relative;
+    }
+    #showPass1{
+        right: 6px;
+        top: 93px;
+    }
 }

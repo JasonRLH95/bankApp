@@ -1,6 +1,3 @@
-/* #usersDiv{
-    
-} */
 #manager-exitBtn{
     margin-bottom: 20px;
     width: 100px;
@@ -14,4 +11,12 @@
 }
 #managerMainDiv{
     padding-bottom: 100px;
+}
+@media(min-width:720px){
+    h3{
+        font-size: 30px;
+    }
+    #manager-exitBtn{
+        width: 200px;
+    }
 }

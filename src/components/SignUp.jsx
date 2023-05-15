@@ -58,19 +58,19 @@ export default function SignUp(props) {
             let user = new props.class(props.id,props.name,props.password,props.amount);
             props.setCurrentUser(user);
             props.setUsers([...props.users,user]);
-            // console.log(props.users);
             nav(`/${props.name}`);
         }
     }
     return (
         <div id='signupDiv'>
-        <input className='signupInputs' onChange={(e)=>{props.setID(e.target.value)}} type='text' placeholder='id'/><br/>
-        <input className='signupInputs' onChange={(e)=>{props.setName(e.target.value)}} type='text' placeholder='name'/><br/>
-        <input className='signupInputs' id='passInput1' onChange={(e)=>{props.setPassword(e.target.value)}} type='password' placeholder='pass' maxLength={20}/><button id='showPass1' onClick={()=>{setPassFlag1(!passFlag1);showPass1()}}></button><br/>
-        <input className='signupInputs' onChange={(e)=>{props.setAmount(e.target.value)}} type='text' placeholder='amount'/><br/>
-        <button className='signupBtns' id='signupBtn1' onClick={()=>{saveUser()}}>save user</button><br/>
-        <button className='signupBtns' id='signupBtn2' onClick={()=>{nav('/')}}>Back</button>
-        {/* <button onClick={()=>{nav('Register')}}>Already exist</button> */}
+            <div id='signupInputsDiv'>
+                <input className='signupInputs' onChange={(e)=>{props.setID(e.target.value)}} type='text' placeholder='id'/><br/>
+                <input className='signupInputs' onChange={(e)=>{props.setName(e.target.value)}} type='text' placeholder='name'/><br/>
+                <input className='signupInputs' id='passInput1' onChange={(e)=>{props.setPassword(e.target.value)}} type='password' placeholder='pass' maxLength={20}/><button id='showPass1' onClick={()=>{setPassFlag1(!passFlag1);showPass1()}}></button><br/>
+                <input className='signupInputs' onChange={(e)=>{props.setAmount(e.target.value)}} type='text' placeholder='amount'/><br/>
+            </div>
+            <button className='signupBtns' id='signupBtn1' onClick={()=>{saveUser()}}>Save user</button><br/>
+            <button className='signupBtns' id='signupBtn2' onClick={()=>{nav('/')}}>Back</button>
     </div>
     )
 }

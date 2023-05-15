@@ -1,6 +1,5 @@
 #homeBtnsRemote{
     margin:auto;
-    /* border:1px solid black; */
     width:170px;
     height:180px;
     display:flex;
@@ -9,10 +8,12 @@
     justify-content:space-around ;
     margin-bottom: 10px;
 }
+#homeBtnsRemote2{
+    display: none;
+}
 .homeBtns{
     width: 75px;
     height: 50px;
-    /* border: none; */
     background-color: rgb(50, 150, 255);
     border: none;
     border-radius: 5px;
@@ -37,5 +38,66 @@
 }
 #homeMainDiv{
     padding-bottom: 30px;
-    /* background-color:red; */
+}
+#openRemote{
+    display: none;
+}
+
+@media(min-width:720px){
+    #homeBtnsRemote{
+        display: none;
+    }
+    #homeBtnsRemote2{
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        top: 86px;
+        left: -310px;
+        flex-direction: column;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
+    .homeBtns{
+        color: rgb(50, 100, 255);
+        width: 300px;
+        border-bottom: 1px solid black;
+        border-radius: 0px;
+        background-color: lightblue;
+    }
+    #openRemote{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+        z-index: 5000;
+        background-color: rgb(50,150,255);
+        border: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #image1{
+        color: white;
+    }
+    @keyframes slideIn{
+        from{
+            left: -310px;
+        }
+        to{
+            left: 0;
+        }
+    }
+    @keyframes slideOut{
+        from{
+            left: 0;
+        }
+        to{
+            left: -310px;
+        }
+    }
 }

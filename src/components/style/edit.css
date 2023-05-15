@@ -7,7 +7,6 @@
     flex-direction:column;
     justify-content:space-evenly;
     line-height:0;
-    /* border: 1px solid black; */
 }
 .editBtns{
     width: 100px;
@@ -20,4 +19,7 @@
 }
 #editBtn2{
     display: none;
+}
+#editBtn3{
+    margin-top: 8px;
 }

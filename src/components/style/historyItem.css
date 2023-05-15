@@ -6,3 +6,14 @@
     margin-bottom: 20px;
     background-color: lightblue;
 }
+
+@media(min-width:720px){
+    .historyItem{
+        width: 400px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 24px;
+    }
+}
