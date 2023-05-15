@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 id='head1'>SV-Bank {`\n`} <p id='rightsP'>&reg; JasonR95</p></h1>
+      <h1 id='head1'>Jason's-Bank {`\n`} <p id='rightsP'>&reg; JasonR95</p></h1>
       <div id='dynamicApp'>
       <BrowserRouter>
         <Routes>
